@@ -24,5 +24,5 @@ variable "details" {
   }
 }
 output "details" {
-  value = "father name is ${var.details[father]} mother name is ${var.details[mother]}"
+  value = "father name is ${var.details["father"]} mother name is ${var.details["mother"]}"
 }
