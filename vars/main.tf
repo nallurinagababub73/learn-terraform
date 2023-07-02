@@ -11,5 +11,5 @@ variable "family" {
 }
 
 output "family" {
-  value = var.family[0]
+  value = var.family[1]
 }
