@@ -19,5 +19,5 @@ output "private_ip_frontend" {
 }
 
 output "private_ip_catalogue" {
-  value = module.frontend.private_ip
+  value = module.catalogue.private_ip
 }
