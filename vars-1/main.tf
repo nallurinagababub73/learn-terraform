@@ -7,3 +7,8 @@ variable "component" {}
 output "FRONTEND" {
   value = var.component
 }
+variable "env" {}
+
+output "env" {
+  value = var.env
+}
