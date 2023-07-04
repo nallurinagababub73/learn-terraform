@@ -4,7 +4,7 @@ resource "aws_instance" "sample_ec2" {
   vpc_security_group_ids = [aws_security_group.sg.id]
 
   tags = {
-    Name = "ec2 from modules"
+    Name = var.name
   }
 }
 
@@ -16,7 +16,7 @@ data "aws_ami" "example" {
 }
 
 resource "aws_security_group" "sg" {
-  name        = "allow_tls"
+  name        = "sg of ${var.name}"
 
   ingress {
     from_port        = 22
@@ -33,6 +33,7 @@ resource "aws_security_group" "sg" {
   }
 
   tags = {
-    Name = "sample-sg"
+    Name = var.name
   }
 }
+variable "name" {}
