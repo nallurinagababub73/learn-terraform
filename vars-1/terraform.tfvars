@@ -1,1 +1,2 @@
-hello = "bagunnara"
+project = "roboshop"
+component = "frontend"

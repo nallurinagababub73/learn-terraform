@@ -1,5 +1,9 @@
-variable "hello" {}
+variable "project" {}
+output "PROJECT" {
+  value = var.project
+}
+variable "component" {}
 
-output "hello" {
-  value = var.hello
+output "FRONTEND" {
+  value = var.component
 }
