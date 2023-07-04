@@ -1,8 +1,8 @@
-module "ec2" {
+module "frontend" {
   source = "./ec2"
   name = "frontend"
 }
-module "ec2" {
+module "catalogue" {
   source = "./ec2"
   name = "catalogue"
 }
