@@ -4,7 +4,7 @@ resource "aws_instance" "ec2" {
   instance_type = each.value["instance_type"]
 
   tags = {
-    Name = each.key
+    Name = each.value["name"]
   }
 }
 
