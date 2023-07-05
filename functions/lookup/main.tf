@@ -31,7 +31,7 @@ output "layer1" {
   value = var.roboshop["presentation"]
 }
 output "layer2" {
-  value = var.roboshop["appilication"]["app1"]
+  value = var.roboshop["application"]["app1"]
 }
 output "layer3" {
   value = var.roboshop["database"]["db4"]["dispatch"]
