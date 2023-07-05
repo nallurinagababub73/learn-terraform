@@ -38,3 +38,6 @@ module "rabbitmq" {
   source = "./ec2"
   name = "rabbitmq"
 }
+output "frontend_dns" {
+  value = module.frontend.dns-record
+}

@@ -45,3 +45,7 @@ resource "aws_route53_record" "dns" {
 }
 variable "name" {}
 
+output "dns-record" {
+  value = aws_route53_record.dns.name
+}
+
