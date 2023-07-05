@@ -36,3 +36,6 @@ output "layer2" {
 output "layer3" {
   value = lookup(lookup(lookup(var.roboshop,"database",null ),"db4",null),"dispatch",null)
 }
+output "ex" {
+  value = length(var.roboshop)
+}
