@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "4338"
-    key    = "naga/hema/pardhu/terraform.tfstate"
+    key    = "naga/terraform.tfstate"
     region = "us-east-1"
   }
 }
