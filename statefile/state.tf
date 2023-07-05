@@ -5,3 +5,7 @@ terraform {
     region = "us-east-1"
   }
 }
+
+output "example" {
+  value = "hello world"
+}
