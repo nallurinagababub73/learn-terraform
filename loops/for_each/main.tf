@@ -28,5 +28,9 @@ variable "components" {
             name = "user"
             instance_type = "t3.nano"
           }
+          shipping = {
+            name = "shipping"
+            instance_type = "t3.nano"
+          }
         }
 }
