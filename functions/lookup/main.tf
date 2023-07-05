@@ -3,5 +3,5 @@ variable "components" {
 }
 
 output "component_name" {
-  value = var.components[0]
+  value = var.components[6]
 }
