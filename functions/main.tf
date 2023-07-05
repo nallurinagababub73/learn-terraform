@@ -5,3 +5,6 @@ variable "location" {
 output "loc" {
   value = upper(var.location)
 }
+output "loca" {
+  value = title(var.location)
+}
