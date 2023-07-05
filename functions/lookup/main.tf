@@ -34,5 +34,5 @@ output "layer2" {
   value = var.roboshop["application"]["app1"]
 }
 output "layer3" {
-  value = var.roboshop["database"]["db4"]["dispatch"]
+  value = lookup(var.roboshop,"database",null )
 }
