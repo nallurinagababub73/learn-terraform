@@ -31,11 +31,15 @@ resource "aws_security_group" "allow_tls" {
   }
 }
 resource "aws_instance" "EC2" {
+  count = length(var.components)
   ami           = data.aws_ami.example.id
   instance_type = "t3.micro"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
 
   tags = {
-    Name = "Dev-Hemasri"
+    Name = var.components[count.index]
   }
+}
+variable "components" {
+        default = ["frontend","catalogue","user","cart"]
 }
